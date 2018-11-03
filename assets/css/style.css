@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    overflow: auto;
+    width: 100%;
+    margin: 0 0 30px;
+    z-index: 99;
+    overflow: auto;
+    border-bottom: 2px solid #ccc;
+    /* position: fixed; */
+    background: url('../img/white_carbon.png');
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+}
+
+h1{
+    /* padding: 20px; */
+    height: 90px;
+    line-height: 90px;
+    background-color: rgb(3, 89, 143);
+    color: white;
+    width: 250px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    margin: 0;
+}
+
+body{
+    background: url('../img/carbon_fibre.png');
+    background-color: grey;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    line-break: 34px;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+#navPanel{
+    /* background-color: white;
+    width: 100%;
+    padding: 20px;
+    float: right; */
+}
+
+#navLinks{
+    text-align: right;
+    padding: 40px 5px 0px 5px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    text-decoration: none;
+    color: rgb(3, 89, 143);
+}
+
+.links:visited{
+    text-decoration: none;
+}
+
+.imgProp{
+    height: 100px;
+    width: 100px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.imgProp:last-child{
+    margin-right: 0;
+}
+
+.main{
+    background-color: white;
+    padding: 10px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 960px; 
+    float: left;
+    border: 1px solid #ddd;
+    /* clear: both; 
+    overflow: auto;*/
+}
+
+.pictureDiv{
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float:left;
+    margin-right: 25px;
+}
+
+aside{
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+footer{
+    clear:both;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+    background: url('../img/real_cf.png');
+    padding: 25px;
+    border-top: 5px solid rgb(3, 89, 143);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.portfolioPicture{
+    width: 275px;
+    overflow: auto;
+    float: left;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.portfolioPicture:nth-child(odd){
+    margin-left: 40px;
+}
+
+.portfolioPicture img{
+    width: 100%;
+}
+
+.portfolioPicture h3{
+    border-bottom: 0;
+    background: rgb(3, 89, 143);
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    width: 16.5%;
+    bottom: 5px;
+    width: 100%;
+}
+
+#contactForm ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+label, input [type = text], input[type = email], textarea{
+    display: block;
+    width: 95%;
+}
+
+input [type = text], input[type = email], textarea{
+    height: 300px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 980px){
+    .main{
+        margin: 5%;
+        max-width: 90%;
+    }
+    
+    h1{
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    header{
+        position: static;
+        /* top: 80px; */
+    }
+
+    #navLinks{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    #mainContainer{
+        /* margin: 150px 0 150px 0;
+        position: fixed; */
+    }
+
+    footer{
+        margin-top: 550px;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        margin: 5%;
+        max-width: 90%;
+    }
+
+    #mainContainer{
+        /* margin: 150px 0 150px 0;
+        position: fixed; */
+    }
+
+    footer{
+        margin-top: 550px;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .main{
+        margin: 5%;
+        max-width: 90%;
+    }
+    
+    h1{
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    header{
+        position: static;
+        /* top: 80px; */
+    }
+
+    #navLinks{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    #mainContainer{
+        /* margin: 150px 0 150px 0;
+        position: fixed; */
+    }
+
+    footer{
+        margin-top: 550px; 
+        z-index: 100;
+    }
+
+}
